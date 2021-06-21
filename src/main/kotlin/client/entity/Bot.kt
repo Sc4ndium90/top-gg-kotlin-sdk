@@ -31,5 +31,4 @@ class Bot(
     val tags: List<String>,
     val bannerUrl: String,
     val donatebotguildid: String?
-) {
-}
+)
