@@ -1,6 +1,7 @@
 # top-gg-kotlin-sdk
 **Kotlin SDK for top.gg API (NON OFFICIAL)**
 
+#getBots will come soon
 
 # Usage
 First, we have to build a DiscordBotListAPI object
