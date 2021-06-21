@@ -5,7 +5,6 @@ import client.entity.BotStats
 import client.entity.SmallUser
 import client.entity.User
 import client.impl.DiscordBotListAPIImpl
-import java.util.*
 
 interface DiscordBotListAPI {
 
@@ -22,13 +21,10 @@ interface DiscordBotListAPI {
     fun getBot(botId: Long): Bot?
     fun getBot(botId: String): Bot?
 
-    fun getVotes(botId: Long): List<SmallUser>?
-    fun getVotes(botId: String): List<SmallUser>?
+    fun getVotes(): List<SmallUser>?
 
     fun hasVoted(userId: Long): Boolean
     fun hasVoted(userId: String): Boolean
-
-    //TODO: Add getBots()
 
     fun isWeekend(): Boolean
 

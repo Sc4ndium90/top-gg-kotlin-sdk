@@ -47,11 +47,7 @@ class DiscordBotListAPIImpl(val token: String, val botId: Long) : DiscordBotList
         return get("https://top.gg/api/bots/$botId")
     }
 
-    override fun getVotes(botId: Long): List<SmallUser>? {
-        return getVotes(botId.toString())
-    }
-
-    override fun getVotes(botId: String): List<SmallUser>? {
+    override fun getVotes(): List<SmallUser>? {
         return get("https://top.gg/api/bots/$botId/votes")
     }
 
