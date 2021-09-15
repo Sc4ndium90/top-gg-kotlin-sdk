@@ -40,7 +40,7 @@ class WebhookBuilder
 
     fun build(): Webhook {
         val packs = ArrayList<PathCollection>()
-        listenerStorage.forEach { (s: String?, o: ListenerCollection?) ->
+        listenerStorage.forEach { (s: String, o: ListenerCollection) ->
             packs.add(PathCollection(
                 s, o))
         }
