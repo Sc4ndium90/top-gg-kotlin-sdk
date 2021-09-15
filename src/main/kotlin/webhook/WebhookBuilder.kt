@@ -18,7 +18,7 @@ class WebhookBuilder
         return this
     }
 
-    fun addGuildListener(
+    fun addServerListener(
         webhookPath: String,
         listener: ServerWebhookListener,
         webhookAuth: String,
