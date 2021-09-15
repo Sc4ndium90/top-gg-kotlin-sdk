@@ -1,4 +1,4 @@
-package client.entity
+package api.entity
 
 import kotlinx.serialization.Serializable
 

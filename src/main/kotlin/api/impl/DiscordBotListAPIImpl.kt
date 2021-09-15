@@ -1,8 +1,8 @@
-package client.impl
+package api.impl
 
-import client.DiscordBotListAPI
-import client.entity.*
-import client.io.ResponseTransformer
+import api.DiscordBotListAPI
+import api.entity.*
+import api.io.ResponseTransformer
 import kotlinx.serialization.encodeToString
 import kotlinx.serialization.json.Json
 import java.net.HttpURLConnection

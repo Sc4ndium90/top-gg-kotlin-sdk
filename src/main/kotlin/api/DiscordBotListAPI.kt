@@ -1,10 +1,10 @@
-package client
+package api
 
-import client.entity.Bot
-import client.entity.BotStats
-import client.entity.SmallUser
-import client.entity.User
-import client.impl.DiscordBotListAPIImpl
+import api.entity.Bot
+import api.entity.BotStats
+import api.entity.SmallUser
+import api.entity.User
+import api.impl.DiscordBotListAPIImpl
 
 interface DiscordBotListAPI {
 
