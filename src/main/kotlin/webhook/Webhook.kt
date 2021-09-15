@@ -18,10 +18,10 @@ class Webhook(
     @Throws(IOException::class)
     fun start(): Webhook {
         server = HttpServer.create(InetSocketAddress(port), 0)
-        pathCollections.forEach(Consumer { pathCollection: PathCollection ->
+        pathCollections.forEach { pathCollection: PathCollection ->
             val pack = pathCollection.listenerCollection
             server.createContext(pathCollection.context, RequestHandler(pack))
-        })
+        }
         println("Webhook started under " + server.address.hostString + " on port " + server.address.port + " under the following context | listeners | authorization")
         pathCollections.forEach(Consumer { pathCollection: PathCollection ->
             val listenerCollection = pathCollection.listenerCollection
