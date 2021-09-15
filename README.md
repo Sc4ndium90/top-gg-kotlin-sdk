@@ -15,7 +15,7 @@ val api = DiscordBotListAPI.Builder()
 
 **Set web stats**
 
-There are so many different ways of posting bot stats.
+There are so many ways of posting bot stats.
 
 1. Post the bot's server count
 ```kotlin
