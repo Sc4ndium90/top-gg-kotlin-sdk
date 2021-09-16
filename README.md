@@ -1,13 +1,13 @@
 [![](https://jitpack.io/v/Sc4ndium90/top-gg-kotlin-sdk.svg)](https://jitpack.io/#Sc4ndium90/top-gg-kotlin-sdk)
 
-# Top.GG Kotlin SDK
+# Top.gg Kotlin SDK
 **Kotlin SDK for top.gg API (NOT OFFICIAL)**
 
 This library is based on [topggwebhook4j](https://github.com/Hopeful-Developers/topggwebhooks4j) by Hopeful and [java-jdk](https://github.com/top-gg/java-sdk)
 
 ## Summary
 1. [Download](#download)
-2. [Top.GG API](#topgg-api-usage)
+2. [Top.gg API](#topgg-api-usage)
 3. [Webhook](#webhook)
 
 ## Download
@@ -150,17 +150,18 @@ webhook.start()
 ## Options for #addBotListener and #addGuildListener
 Parameter | Type | Example | Purpose
 --------- | ---- | ------- | -------
-context | String | "BotWebhook" | This is the path of the webhook. With the example the link on top.gg would be like `http://XXXXXX:4242/BotWebhook`
-listener | BotWebhookListener or ServerWebhookListener | `BotVoteListener()` | This is the class you would use to give rewards to users or use it to send a small notification
+context | String | "BotWebhook" | This is the path of the webhook. The link on top.gg would be like `http://XXXXXX:4242/BotWebhook`
+listener | BotWebhookListener or ServerWebhookListener | `BotVoteListener()` | This is the class you would use to give rewards to users or to send a small notification
 auth | String | "MyCoolWebhookKey" | This is what authorizes your webhook. This is used to identify the requests coming to your webhook.
-options | Options.. | `Options.IGNORE_AUTHORIZATION` | These are optional and are useful for people who want to check if the webhook work
+options | Options.. | `Options.IGNORE_AUTHORIZATION` | These are optional and are useful for people who want to check if the webhook works.
 
 ## Create the listener
-Nothing to hard to do, create a class and add the BotWehbookListener or ServerWebhookListener to it and do what you want with votes :D
+To create a vote listener, just create a class and add `BotWehbookListener` or `ServerWebhookListener` to it!
+
 ```kotlin
 class VoteEvent : BotWebhookListener {
    override fun onWebhookRequest(event: BotWebhookEvent) {
-      //Do what you want !
+      // Do anything you want with the vote event!
    }
 }
 ```
