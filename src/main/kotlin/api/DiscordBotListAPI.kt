@@ -43,8 +43,8 @@ interface DiscordBotListAPI {
         }
 
         fun build(): DiscordBotListAPI {
-            if (token == null) throw IllegalArgumentException("Token cannot be null !")
-            if (botId == null) throw IllegalArgumentException("Bot ID cannot be null !")
+            if (token == null) throw IllegalArgumentException("Token must not be null!")
+            if (botId == null) throw IllegalArgumentException("Bot ID must not be null!")
 
             return DiscordBotListAPIImpl(token!!, botId!!)
         }
