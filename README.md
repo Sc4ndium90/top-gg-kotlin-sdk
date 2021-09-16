@@ -3,6 +3,8 @@
 # Top.GG Kotlin SDK
 **Kotlin SDK for top.gg API (NOT OFFICIAL)**
 
+This library is based on [topggwebhook4j](https://github.com/Hopeful-Developers/topggwebhooks4j) by Hopeful and [java-jdk](https://github.com/top-gg/java-sdk)
+
 ## Summary
 1. [Download](#download)
 2. [Top.GG API](#topgg-api-usage)
